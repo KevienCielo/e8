@@ -1,0 +1,160 @@
+* {
+  margin: 0px;
+  padding: 0px;
+  outline: 1px dotted red;
+  font-family: arial, verdana, sans-serif;
+}
+body {
+  background-image: url(../images/WebBoxLayout.PNG);
+  background-repeat: no-repeat;
+  background-size: 900px;
+  #container {
+    // background-color: lightgray;
+    margin: 10px;
+    width: 877px;
+    height: 636px;
+    padding-top: 10px;
+    #header {
+      // background-color: lightgreen;
+      width: 857px;
+      height: 70px;
+      margin: 0px 10px 10px 10px;
+      #logo {
+        display: inline-block;
+        // background-color: lightyellow;
+        width: 330px;
+        height: 70px;
+        margin-right: 275px;
+      }
+      #links {
+        display: inline-block;
+        // background-color: red;
+        vertical-align: top;
+        padding: 25.5px 0;
+        ul {
+          text-align: center;
+          margin: 0;
+          padding: 0;
+          li {
+            // background-color: yellow;
+            display: inline-block;
+            border-right: 2px solid black;
+            margin-right: 5px;
+            padding-right: 5px;
+            &:last-child {
+              border-right: none;
+              padding-right: 0;
+              margin-right: 0;
+            }
+          }
+        }
+      }
+      #userPic {
+        display: inline-block;
+        width: 50px;
+        height: 50px;
+        // background-color: lightyellow;
+        position: relative;
+        bottom: 8px;
+        margin-left: 5px;
+      }
+    }
+    #nav {
+      // background-color: lightgreen;
+      width: 857px;
+      height: 40px;
+      margin: 0px 10px 10px 10px;
+      text-align: center;
+      ul {
+        list-style: none;
+        position: relative;
+        top: 10px;
+        li {
+          display: inline-block;
+          margin: 0 22.5px;
+          a {
+            text-decoration: none;
+          }
+        }
+      }
+    }
+    #content {
+      // background-color: lightgreen;
+      width: 857px;
+      height: 500px;
+      margin: 0px 10px 10px 10px;
+      #side-panel {
+        // background-color: lightcyan;
+        width: 170px;
+        height: 450px;
+        display: inline-block;
+        vertical-align: top;
+        margin: 3px 20px 0 3px;
+        padding: 15px 15px;
+        .sp-header {
+          // background-color: lightpink;
+          width: 150px;
+          height: 110px;
+          padding: 10px;
+          margin-bottom: 20px;
+          button {
+            margin: 15px 0 0 73px;
+            width: 75px;
+            font-weight: 900;
+          }
+        }
+      }
+      #main-panel {
+        display: inline-block;
+        vertical-align: top;
+        // background-color: lightblue;
+        width: 600px;
+        height: 480px;
+        margin: 3px 3px 0 20px;
+        #promo-banner {
+          // background-color: lightcyan;
+          height: 30px;
+          padding: 20px 20px;
+          margin-bottom: 15px;
+        }
+        #products {
+          // background-color: lightcyan;
+          height: 295px;
+          padding: 15px 0 0 20px;
+          margin-bottom: 10px;
+          .product {
+            // background-color: lightpink;
+            display: inline-block;
+            width: 240px;
+            height: 250px;
+            padding: 15px;
+            margin-right: 15px;
+            img {
+              // background-color: lightyellow;
+              margin-top: 15px;
+              width: 235px;
+              height: 210px;
+            }
+          }
+        }
+        #banners {
+          // background-color: lightcyan;
+          height: 75px;
+          .banner {
+            display: inline-block;
+            // background-color: lightpink;
+            width: 185px;
+            height: 75px;
+            margin-left: 10px;
+            img {
+              // background-color: lightyellow;
+              width: 165px;
+              height: 55px;
+              margin: 10px;
+            }
+          }
+        }
+      }
+    }
+  }
+}
